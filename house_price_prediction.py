@@ -17,3 +17,14 @@ plt.ylabel('price')
 plt.scatter(df.area,df.price,color='red',marker='+')
 plt.plot(df.area,model.predict(df[['area']]),color='blue')
 plt.show()
+
+import pickle
+
+with open("model_pickle", "wb") as f:
+    pickle.dump(model,f)
+
+with open("model_pickle", "rb") as f:
+    mp = pickle.load(f)
+
+print(mp.predict(pd.DataFrame([[5000]], columns=['area'])))
+
