@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from word2number import w2n
 
-df = pd.read_csv("D:\Coding journey\Codebasics ML\hiring.csv")
+df = pd.read_csv("D:\Coding journey\Codebasics ML\CSV files\hiring.csv")
 
 df.experience = df.experience.fillna("zero")
 df.experience = df.experience.apply(w2n.word_to_num)

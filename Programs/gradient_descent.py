@@ -19,7 +19,7 @@ def gradient_descent(x,y):
         print("m {}, b {}, cost {}, iteration {}".format(m_curr,b_curr,cost,i))
 
 
-df = pd.read_csv(r"D:\Coding journey\Codebasics ML\test_scores.csv")
+df = pd.read_csv(r"D:\Coding journey\Codebasics ML\CSV files\test_scores.csv")
 x = np.array(df.math)
 y = np.array(df.cs)
 gradient_descent(x,y)

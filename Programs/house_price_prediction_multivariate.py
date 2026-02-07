@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("D:\Coding journey\Codebasics ML\homeprices2.csv")
+df = pd.read_csv("D:\Coding journey\Codebasics ML\CSV files\homeprices2.csv")
 median_bedrooms = math.floor(df.bedrooms.median())
 df.bedrooms = df.bedrooms.fillna(median_bedrooms)
 print(df)

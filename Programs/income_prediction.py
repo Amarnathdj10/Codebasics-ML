@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv(r"D:\\Coding journey\\Codebasics ML\\canada_per_capita_income.csv")
+df = pd.read_csv(r"D:\\Coding journey\\Codebasics ML\\CSV files\\canada_per_capita_income.csv")
 
 model = LinearRegression()
 model.fit(df[['year']],df.per_capita_income)

@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r'D:\Coding journey\Codebasics ML\insurance_data.csv')
+df = pd.read_csv(r'D:\Coding journey\Codebasics ML\CSV files\insurance_data.csv')
 
 X = df[['age']]
 y = df.bought_insurance

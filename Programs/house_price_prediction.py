@@ -3,11 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv(r"D:\\Coding journey\\Codebasics ML\\homeprices.csv")
+df = pd.read_csv(r"D:\\Coding journey\\Codebasics ML\\CSV files\\homeprices.csv")
 
 model = LinearRegression()
 model.fit(df[['area']], df.price)
-d = pd.read_csv(r'D:\\Coding journey\\Codebasics ML\\areas.csv')
+d = pd.read_csv(r'D:\\Coding journey\\Codebasics ML\\CSV files\\areas.csv')
 p = model.predict(d[['area']])
 d['prices'] = p
 d.to_csv('prediction.csv', index=False)

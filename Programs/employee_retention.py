@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"D:\Coding journey\Codebasics ML\HR_comma_sep.csv")
+df = pd.read_csv(r"D:\Coding journey\Codebasics ML\CSV files\HR_comma_sep.csv")
 
 left = df[df.left==1]
 print(left.shape)
