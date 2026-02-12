@@ -6,8 +6,8 @@ from sklearn.model_selection import train_test_split
 
 df = pd.read_csv(r'D:\Coding journey\Codebasics ML\CSV files\heart.csv')
 
-cols_to_one_hot_encode = ['Sex','ChestPainType','RestingBP','RestingECG','ExerciseAngina','ST_Slope']
-df = pd.get_dummies(df,columns=cols_to_one_hot_encode,drop_first=True)
+cols_to_encode = ['Sex','ChestPainType','RestingBP','RestingECG','ExerciseAngina','ST_Slope']
+df = pd.get_dummies(df,columns=cols_to_encode,drop_first=True)
 
 X = df.drop(['HeartDisease'],axis=1)
 y = df['HeartDisease']
